@@ -1,0 +1,14 @@
+ <div class="col s4 m4 l4 xl4">
+      <div class="card small">
+        <div class="card-image center">
+         {{ field_project_image }} 
+        </div>
+        <div class="card-content">
+        <span class="card-title">{{ title }}</span>
+          <p>{{ field_project_short_description }} </p> 
+        </div>
+        <div class="card-action">
+        <a href="{{ view_node }} ">check it out</a>
+        </div>
+      </div>
+    </div>

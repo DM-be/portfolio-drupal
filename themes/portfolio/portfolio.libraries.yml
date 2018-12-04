@@ -1,0 +1,11 @@
+global-styling-and-scripts:
+  css:
+    theme:
+      css/style.css: {}
+      css/materialize.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui.effects.core
+  js:
+    js/materialize.min.js: {}
+    js/init.js: {}

@@ -1,0 +1,76 @@
+
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+.social-icons {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+
+.social-icons li {
+  margin: 1px;
+}
+
+.profile-img {
+  display: block;
+  margin-left: auto;
+    margin-right: auto;
+    height: 25%;
+    width: 25%;
+}
+
+.skill-container {
+  width: 100%; /* Full width */
+  background-color: #eeeeee ; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+  margin-bottom: 10px;
+}
+
+.html {
+  width: 90%; background-color:#e57373;
+}
+
+.css {
+  width: 70%; background-color:#e57373;
+}
+.js6 {
+  width: 80%; background-color:#e57373;
+}
+
+.angular {
+  width: 70%; background-color:#e57373;
+}
+
+.node {
+  width: 50%; background-color:#e57373;
+}
+
+.netcore {
+  width: 60%; background-color:#e57373;
+}
+
+.nest {
+  width: 60%; background-color:#e57373;
+}
+.center {
+  display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+max-height: 150px !important;
+}
