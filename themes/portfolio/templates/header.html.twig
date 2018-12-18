@@ -21,12 +21,36 @@
 <body>
 
   <header>
-    <nav >
+    {# <nav >
     <div class="nav-wrapper container">
     <a href="/projects"><ul><li>projects</li></ul></a>
     <a href="/about" class="brand-logo">DM</a>
     </div>
-    </nav>
+    </nav> #}
+
+    {# Get menu items #}
+{% set items = simplify_menu('main') %}
+
+{# Iterate menu tree #}
+
+<nav>
+<div class="nav-wrapper container">
+ <a href="/about" class="brand-logo">DM</a>
+
+
+<ul class="right">
+  {% for menu_item in items.menu_tree %}
+    <li class="navigation__item">
+      <a href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+</nav>
+
+</div>
   </header>
+
+
 
 
