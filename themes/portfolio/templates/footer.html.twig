@@ -7,17 +7,18 @@
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Menu</h5>
-        </div>
-
-
-        <!-- <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul class="social-icons">
-            <li><a class="white-text center" href="#!"><img src='<?php /* bloginfo('template_url') */?>/images/01_twitter1.png' alt="twitter" height="42" width="42"></a></li>
-            <li><a class="white-text center" href="#!"><img src='<?php /* bloginfo('template_url') */ ?>/images/01_twitter1.png' alt="twitter" height="42" width="42"></a></li>
+        {% set items = simplify_menu('main') %}
+        <div>
+          <ul>
+            {% for menu_item in items.menu_tree %}
+                <li class="navigation__item">
+                  <a class="white-text" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+                </li>
+            {% endfor %}
           </ul>
-        </div> -->
-
+        </div>
+      </div>
+        
 
       </div>
     </div>

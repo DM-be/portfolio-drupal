@@ -1,0 +1,65 @@
+{% include directory ~ '/templates/header.html.twig' %}
+
+<div class="flex-container">
+
+<main>
+
+  <section >
+    <h1 class="header center grey-text text-darken-3">Hi i'm Dennis :)</h1>
+    <div class="row center">
+      <h5 class="header light">I'm a full-stack developer from Bruges, Belgium
+        <br>
+        I can help you build your next product.
+        <br>
+        Have an idea you would like to discuss?
+      </h5>
+    </div>
+    <div class="row center">
+      <a href="#" class="btn-large waves-effect waves-light red lighten-2">Contact me</a>
+    </div>
+    <br><br>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-red-text"><i class="medium material-icons">devices</i></h2>
+          <h5 class="center">Responsive</h5>
+
+          <p class="light center-align">My products work on any device, big or small.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-red-text"><i class="medium material-icons">lightbulb_outline</i></h2>
+          <h5 class="center">Intuitive</h5>
+
+          <p class="light center-align">An app should be easy to use, which is something I constantly aim for.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-red-text"><i class="medium material-icons">flash_on</i></h2>
+          <h5 class="center">Fast</h5>
+          <p class="light center-align">Fast load times and lag free, my top priority.</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    
+  </section>
+</main>
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+</div>
+
+
+  
+
+{% include directory ~ '/templates/footer.html.twig' %}

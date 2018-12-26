@@ -1,22 +1,44 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
- body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1280px;
+  margin: auto;
+  justify-content: center;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main,
+aside {
+  flex: 0 100%;
+}
+
+main {
+  flex: 1 0 0px;
+}
+
+aside {
+  flex: 0 0 200px;
+  padding: 20px;
+}
+
+.sidebar-card {
+  padding: 20px;
+}
 
 
 .social-icons {
-  
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
+
 
 .social-icons li {
   margin: 1px;
@@ -25,52 +47,61 @@
 .profile-img {
   display: block;
   margin-left: auto;
-    margin-right: auto;
-    height: 25%;
-    width: 25%;
+  margin-right: auto;
+  height: 25%;
+  width: 25%;
 }
 
 .skill-container {
-  width: 100%; /* Full width */
-  background-color: #eeeeee ; /* Grey background */
+  width: 100%;
+  background-color: #eeeeee;
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding: 10px; /* Add some padding */
-  color: white; /* White text color */
+  text-align: right;
+  padding: 10px;
+  color: white;
   margin-bottom: 10px;
 }
 
-.html {
-  width: 90%; background-color:#e57373;
+.html-skill {
+  width: 90%;
+  background-color: #e57373;
 }
 
-.css {
-  width: 70%; background-color:#e57373;
-}
-.js6 {
-  width: 80%; background-color:#e57373;
+.css-skill {
+  width: 70%;
+  background-color: #e57373;
 }
 
-.angular {
-  width: 70%; background-color:#e57373;
+.js-skill {
+  width: 80%;
+  background-color: #e57373;
 }
 
-.node {
-  width: 50%; background-color:#e57373;
+.angular-skill {
+  width: 70%;
+  background-color: #e57373;
 }
 
-.netcore {
-  width: 60%; background-color:#e57373;
+.node-skill {
+  width: 50%;
+  background-color: #e57373;
 }
 
-.nest {
-  width: 60%; background-color:#e57373;
+.netcore-skill {
+  width: 60%;
+  background-color: #e57373;
 }
+
+.nest-skill {
+  width: 60%;
+  background-color: #e57373;
+}
+
 .center {
   display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */
-max-height: 150px !important;
+  justify-content: center;
+  align-items: center;
+  max-height: 150px !important;
 }
