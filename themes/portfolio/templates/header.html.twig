@@ -30,6 +30,7 @@
 
     {# Get menu items #}
 {% set items = simplify_menu('main') %}
+{% set secondary_menu_items = simplify_menu('account') %}
 
 {# Iterate menu tree #}
 
@@ -44,9 +45,18 @@
       <a href="{{ menu_item.url }}">{{ menu_item.text }}</a>
     </li>
   {% endfor %}
+
+   {% for menu_item in secondary_menu_items.menu_tree %}
+    <li class="navigation__item account-nav">
+      <a href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+    </li>
+  {% endfor %}
+  
 </ul>
 
 </nav>
+
+
 
 </div>
   </header>
