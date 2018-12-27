@@ -1,0 +1,98 @@
+
+{% include directory ~ '/templates/header.html.twig' %}
+
+<div class="flex-container">
+    
+
+<main>
+<section>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-red-text"><i class="medium material-icons">devices</i></h2>
+          <h5 class="center">Responsive</h5>
+
+          <p class="light center-align">My products work on any device, big or small.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-red-text"><i class="medium material-icons">lightbulb_outline</i></h2>
+          <h5 class="center">Intuitive</h5>
+
+          <p class="light center-align">An app should be easy to use, which is something I constantly aim for.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-red-text"><i class="medium material-icons">flash_on</i></h2>
+          <h5 class="center">Fast</h5>
+          <p class="light center-align">Fast load times and lag free, my top priority.</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+</section>
+
+
+
+<section>
+     <div class="row">
+        <div class="col l6">
+            <div class="row vertical-align">
+                <div >
+
+        <img src="{{ base_path ~ directory }}/images/dennis.jpeg" alt="My picture" class="circle responsive-img profile-img z-depth-2" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="center-align">
+                    <h5>Who's this guy?</h5>
+                    <p>I'm currently a student at Howest Bruges.</p>
+                    <p>I love learning new stuff and different technologies.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col l6">
+            <div class="row">
+                <div class="skill-container z-depth-2">
+                    <div class="skills html-skill  ">HTML</div>
+                </div>
+                <div class="skill-container z-depth-2">
+                    <div class="skills css-skill  ">CSS</div>
+                </div>
+                <div class="skill-container z-depth-2">
+                    <div class="skills js-skill  ">javascript</div>
+                </div>
+                <div class="skill-container z-depth-2">
+                    <div class="skills angular-skill  ">Angular</div>
+                </div>
+                <div class="skill-container z-depth-2">
+                    <div class="skills node-skill  ">Node</div>
+                </div>
+                <div class="skill-container z-depth-2">
+                    <div class="skills nest-skill  ">Nestjs</div>
+                </div>
+                <div class="skill-container z-depth-2">
+                    <div class="skills netcore-skill  ">.NET core</div>
+                </div>
+
+        </div>
+    </div>
+</section>
+   
+
+
+
+
+
+
+
+</main>
+</div>
+
+
+{% include directory ~ '/templates/footer.html.twig' %}
