@@ -3,6 +3,7 @@
   const setFooterStyle = () => $("#footer_menu li a").addClass("white-text"); // set footer menu white text
   const setFooterUl = () => $("#footer-social-h5 + ul").addClass("social-icons");
   const hideInaccessible = () => $("li:contains('Inaccessible')").hide();
+  const addClassesToButtons = () => $('input.form-submit').addClass("btn-large waves-effect waves-light red lighten-2");
 
   $(function () {
 
@@ -11,6 +12,7 @@
     setFooterStyle();
     setFooterUl();
     hideInaccessible();
+    addClassesToButtons();
 
 
 

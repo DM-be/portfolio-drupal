@@ -12,3 +12,18 @@
         </div>
       </div>
     </div>
+
+
+ <div class="col s4 m4 l4 xl4">
+      <div class="card small">
+        <div class="card-image center">
+         {{ field_image }} 
+        </div>
+        <div class="card-content">
+        <span class="card-title">{{ title }}</span>
+        </div>
+        <div class="card-action">
+        <a href="{{ view_node }} ">check it out</a>
+        </div>
+      </div>
+    </div>
