@@ -21,18 +21,12 @@
 <body>
 
   <header>
-    {# <nav >
-    <div class="nav-wrapper container">
-    <a href="/projects"><ul><li>projects</li></ul></a>
-    <a href="/about" class="brand-logo">DM</a>
-    </div>
-    </nav> #}
 
-    {# Get menu items #}
+{# Get menu items #}
 {% set items = simplify_menu('main') %}
 {% set secondary_menu_items = simplify_menu('account') %}
 
-{# Iterate menu tree #}
+{# Iterate menu trees #}
 
 <nav>
 <div class="nav-wrapper container">

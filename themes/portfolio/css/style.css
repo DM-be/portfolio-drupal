@@ -106,9 +106,9 @@ aside {
 }
 
 
-
-
-
+/* 
+ Drupal specific css
+*/
 
 form {
   margin: 10px;
@@ -117,8 +117,6 @@ form {
 .form-wrapper {
   margin: 10px;
 }
-
-
 
 img {
   width: auto !important;
